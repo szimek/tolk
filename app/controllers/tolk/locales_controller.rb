@@ -6,7 +6,7 @@ module Tolk
     def index
       @locales = Tolk::Locale.secondary_locales
     end
-  
+
     def show
       respond_to do |format|
         format.html do
@@ -25,6 +25,14 @@ module Tolk
 
     def all
       @phrases = @locale.phrases_with_translation(params[:page])
+    end
+
+    def dump
+      Tolk::Locale.dump_all
+      redirect_to :back
+
+      # TODO add config option for reloading translations
+      `bundle exec thin restart -C config/thin.yml -O`
     end
 
     def updated

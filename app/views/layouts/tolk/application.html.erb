@@ -19,7 +19,11 @@
 <body>
   <div id="container">
     <div id="head">
-      <h1><span class="home"><%= link_to "Tolk", tolk_root_path %></span><%= yield :locale %></h1>
+      <h1>
+        <span class="home"><%= link_to "Tolk", tolk_root_path %></span>
+        <%= yield :locale %>
+        <span class="reload"><%= link_to "Reload", dump_tolk_locales_path %></span>
+      </h1>
     </div>
     <%= yield %>
   </div>

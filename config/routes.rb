@@ -6,6 +6,9 @@ Rails.application.routes.draw do
         get :all
         get :updated
       end
+      collection do
+        get :dump
+      end
     end
     resource  :search
   end

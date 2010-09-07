@@ -3,20 +3,20 @@ Defaults
 -------------------------------------------------*/
 
 acronym, abbr {
-  font-variant: small-caps; 
-  text-transform: lowercase; 
+  font-variant: small-caps;
+  text-transform: lowercase;
   font-weight: bold;
 }
 
-.center {text-align: center;}	
-.large {font-size: larger;}	
+.center {text-align: center;}
+.large {font-size: larger;}
 .small {font-size: smaller;}
 strong {font-weight: bold;}
 em {font-style: italic;}
 
-.clear {clear: both;}				 
-.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }		 
-.clearfix { display: inline-block; }		 
+.clear {clear: both;}
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
 .clearfix{ display: block; }
 
 a {color: #888;}
@@ -28,8 +28,8 @@ Layout
 
 body {
   font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-  background: #e5e5e5; 
-  color: #333;   
+  background: #e5e5e5;
+  color: #333;
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -79,6 +79,18 @@ div#head span.home {
   background: #333;
   padding: 8px 6px 8px 12px;
   margin-right: 1px;
+}
+
+div#head span.reload {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: none repeat scroll 0 0 #444444;
+  padding: 8px 10px;
+}
+
+div#head span.reload:hover {
+  background-color: #333333;
 }
 
 div#head span.locale {
