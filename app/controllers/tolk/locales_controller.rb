@@ -32,7 +32,7 @@ module Tolk
       redirect_to :back
 
       # TODO add config option for reloading translations
-      `bundle exec thin restart -C config/thin.yml -O`
+      system("sh -c 'bundle exec thin restart -C config/thin.yml -O' &")
     end
 
     def updated
