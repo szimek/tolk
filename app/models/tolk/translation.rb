@@ -110,7 +110,7 @@ module Tolk
         if primary_translation.variables.empty?
           self.errors.add(:text, "The original does not contain variables, so they should not be included.")
         else
-          self.errors.add(:text, "The translation should contain the variables #{primary_translation.to_a.to_sentence}.")
+          self.errors.add(:text, "The translation should contain the variables #{primary_translation.variables.to_a.to_sentence}.")
         end
       end
     end
